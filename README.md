@@ -1,4 +1,5 @@
-#Random Locality Mapper
+Random Locality Mapper
+
 Project Overview
 The Random Locality Mapper is an interactive web application that demonstrates the integration of geospatial mapping libraries with third-party REST APIs. The tool generates randomized geographical coordinates within a specific bounding box and uses reverse geocoding to identify and display local community data in real-time.
 
