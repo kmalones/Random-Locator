@@ -1,0 +1,79 @@
+:root {
+  --bg: #eef4f8;
+  --panel: #ffffff;
+  --text: #22313f;
+  --muted: #5f6d79;
+  --border: #d6e0e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  padding: 16px;
+}
+
+.page-shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+#map,
+#marker-info {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+#map {
+  height: min(72vh, 680px);
+  min-height: 360px;
+}
+
+#marker-info {
+  padding: 14px 16px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.marker-item {
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.marker-item:first-of-type {
+  border-top: 0;
+}
+
+.coords,
+.locality {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 10px;
+  }
+
+  #map {
+    min-height: 320px;
+  }
+}
